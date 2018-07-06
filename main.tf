@@ -45,4 +45,6 @@ module "network" {
   allow_ssh_traffic   = true
 }
 
-
+output "windows_vm_public_name"{
+  value = "${module.windowsserver.public_ip_dns_name}"
+}
