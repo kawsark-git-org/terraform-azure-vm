@@ -63,7 +63,7 @@ module "network2" {
   location            = "${var.location}"
   resource_group_name = "${var.resource_group_name}"
   allow_ssh_traffic   = true
-  subnet_names        = ["network2-subnet1"]
+  vnet_name          = "network2-vnet"
 }
 
 output "windows_vm_public_name"{
