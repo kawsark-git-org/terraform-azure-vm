@@ -27,7 +27,7 @@ variable "admin_password" {
 
 module "windowsserver" {
   source              = "app.terraform.io/kawsar-org/compute/azurerm"
-  version             = "1.1.5"
+   version             = "1.1.5"
   location            = "${var.location}"
   vm_hostname         = "demo-tfe"
   admin_password      = "${var.admin_password}"
@@ -39,7 +39,7 @@ module "windowsserver" {
 
 module "windowsserver2" {
   source              = "app.terraform.io/kawsar-org/compute/azurerm"
-  version             = "1.1.5"
+   version             = "1.1.5"
   location            = "${var.location}"
   vm_hostname         = "demo-tfe-2"
   admin_password      = "${var.admin_password}"
